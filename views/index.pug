@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  //- h1= title
+  //- p Welcome to #{title}
+  p Formulario de entrada
+  form
+    | Email:
+    br
+    input(type='email', name='txtEmail', placeholder='ingresa email')
+    br
+    | Contraseña:
+    br
+    input(type='password', name='txtClave', placeholder='Contraseña')
+    br
+    br
+    input(type='submit', value='Submit')
+  h3 Asi funciona pug
